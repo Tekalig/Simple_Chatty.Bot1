@@ -1,0 +1,63 @@
+body {
+  background-color: whitesmoke;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 50%;
+  height: 90vh;
+  margin: 30px auto;
+  overflow: hidden;
+  background-color: rgba(29, 36, 32, 0.76);
+  border: 5px solid rgba(20, 15, 15, 0.486);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 2px;
+}
+
+.button {
+	display: flex;
+  justify-content: center;
+	align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.display {
+  grid-column: 1 / span 4;
+  margin:10px;
+}
+
+#display {
+  width: 100%;
+	height: 100%;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 2rem;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.number {
+	background-color: rgb(156, 96, 6);
+}
+
+.clear {
+	background-color: rgb(231, 8, 8);
+}
+
+.decimal, .plus-minus {
+	background-color: gray;
+}
+
+.equal, .percentage {
+	background-color: rgba(5, 184, 5, 0.849);
+}
+
+.plus, .minus, .multiply, .divide, .modulo{
+	background-color: coral;
+}
