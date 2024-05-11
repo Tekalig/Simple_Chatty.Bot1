@@ -3,6 +3,16 @@ let result = 0;
 let valueHold = 0;
 let oprator = "";
 input.textContent = valueHold;
+
+document.querySelectorAll(".button").forEach((bt) => {
+  bt.addEventListener("click", () => {
+    bt.classList.add("pressed");
+    setTimeout(() => {
+      bt.classList.remove("pressed");
+    }, 100);
+  });
+});
+  
 document.querySelectorAll(".number").forEach((num) => {
   num.addEventListener("click", () => {
     if (valueHold === 0 || valueHold === result) {

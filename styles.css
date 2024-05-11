@@ -35,6 +35,11 @@ body {
 	align-items: flex-end;
 }
 
+.pressed {
+  box-shadow: 4px  #DBEDF3;
+  opacity: 0.6;
+}
+
 .number, .dot {
 	background-color: rgba(248, 160, 28, 0.842);
 }
