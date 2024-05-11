@@ -5,14 +5,16 @@ body {
 
 .container {
   height: 90vh;
-  margin: 30px auto;
+  margin: 20px auto;
   overflow: hidden;
-  background-color: rgb(29, 36, 32);
+  background-color: rgba(29, 36, 32, 0.705);
   border: 5px solid rgba(20, 15, 15, 0.486);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 5px;
+  padding: 5px 15px;
+  border-radius: 10px;
 }
 
 .button {
@@ -21,18 +23,20 @@ body {
 	align-items: center;
   cursor: pointer;
   border-radius: 10px;
-  border: none;
-  font-size: 1.5rem;
+  border: 2px solid rgba(10, 10, 10, 0.63);
+  font-size: 1.2rem;
 }
 
 .display {
   grid-column: 1 / span 4;
-  margin:10px;
   background-color: rgb(255, 255, 255);
-  font-size: 4rem;
+  font-size: 5rem;
   display: flex;
   justify-content: flex-end;
 	align-items: flex-end;
+  padding: -10px;
+  border-radius: 10px;
+  border: 3px solid rgba(15, 13, 13, 0.76);
 }
 
 .pressed {
