@@ -7,12 +7,12 @@ body {
   height: 90vh;
   margin: 30px auto;
   overflow: hidden;
-  background-color: rgba(29, 36, 32, 0.76);
+  background-color: rgb(29, 36, 32);
   border: 5px solid rgba(20, 15, 15, 0.486);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  grid-gap: 2px;
+  grid-gap: 5px;
 }
 
 .button {
@@ -35,46 +35,42 @@ body {
 	align-items: flex-end;
 }
 
-.number {
-	background-color: rgb(156, 96, 6);
+.number, .dot {
+	background-color: rgba(248, 160, 28, 0.842);
 }
 
 .clear {
 	background-color: rgb(231, 8, 8);
 }
 
-.decimal, .plus-minus {
-	background-color: gray;
+.equal {
+  background-color: green;
 }
 
-.equal, .percentage {
-	background-color: rgba(5, 184, 5, 0.849);
-}
-
-.plus, .minus, .multiply, .divide, .modulo{
-	background-color: coral;
+.oprator,.plus_minus, .percentage {
+	background-color: rgb(250, 127, 82);
 }
 
 @media (max-width:560px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media (min-width:560px) {
   .container {
     width: 90%;
   }
 }
 
-@media (min-width:785px) {
+@media (min-width:560px) {
   .container {
     width: 70%;
   }
 }
 
+@media (min-width:785px) {
+  .container {
+    width: 60%;
+  }
+}
+
 @media (min-width:992px) {
   .container {
-    width: 50%;
+    width: 40%;
   }
 }
